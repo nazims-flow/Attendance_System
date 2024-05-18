@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Take Attendance</h2>
+<form method="POST" action="{{ url_for('take_attendance') }}">
+    <div>
+        <button type="submit">Capture Attendance</button>
+    </div>
+</form>
+{% endblock %}

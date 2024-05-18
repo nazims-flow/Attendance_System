@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h2>Dashboard</h2>
+<div class="dashboard-links">
+    <a href="{{ url_for('register') }}" class="btn">Register Student</a>
+    <a href="{{ url_for('take_attendance') }}" class="btn">Take Attendance</a>
+    <a href="{{ url_for('display_attendance') }}" class="btn">View Attendance</a>
+</div>
+{% endblock %}
